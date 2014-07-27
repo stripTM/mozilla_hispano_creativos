@@ -1,0 +1,140 @@
+/* Regular */
+@font-face {
+	font-family: "Open Sans";
+	src: url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.eot");
+	src: url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"),
+		url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.woff") format("woff"),
+		url("//www.mozilla.org/media/fonts/OpenSans-Regular-webfont.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	/*
+	background-image:  url(bocetos/mh-creativo-proyectos-index.jpg);
+	*/
+	background-color: #FFF;
+	background: linear-gradient(to bottom, rgba(233,237,240,1) 0%, rgba(255,255,255,1) 20em);
+	
+	margin: 0;
+	border-top:  4px solid #FFF;
+	padding: 0;
+	font: 14px/1.6 "Open Sans","Lucida Sans","Lucida Grande","Lucida Sans Unicode",Calibri,sans-serif;
+}
+
+#wrapper {
+	max-width: 1050px;
+	margin: auto;
+	background-image:  url(media/rombos.png);
+	background-repeat:  no-repeat;
+	background-position: left top;
+}
+header {
+	display : flex;
+	flex-direction: row;	
+}
+	header .logo {
+		margin: 0 5em 0 0;
+	}
+		header .logo p {
+			margin: 0;
+			border-top: 1px solid #D3D7DA;
+			width: 50%;
+			float: right;
+			text-align: center;
+			font-size: 0.8em;
+			text-transform: uppercase;
+			color: #494949;
+		}
+		header .logo p .b {
+			color: #0A88D4;
+		}
+	header nav {
+		flex-grow: 2;
+	}		
+		#nav-main-menu {
+			display : flex;
+
+			flex-direction: row;
+			flex-grow: 1;
+			flex-wrap: no-wrap;
+			margin: 0;
+			padding: 5em 0 0 0;
+			list-style: none;
+		}
+		#nav-main-menu li {
+			flex: 1 1 auto;
+			margin: 0	;
+			padding: 0;
+			font-size: 0.85em;
+		}
+		#nav-main-menu a {
+			border: 1px solid transparent;
+			border-radius: 1.2em;
+			padding: 0.5em 2em;
+			color: #494949;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+		#nav-main-menu a:hover {
+			background-color: #FFF;
+			color: #0A88D4;
+			border-color: #E0E1E3;
+		}
+		#nav-main-menu #toHome a{
+			background-image: url('media/home_icon.png');
+			background-position:  center;
+			background-repeat: no-repeat;
+		}
+		#nav-main-menu #toHome a span{
+			display: none;
+		}
+
+
+.proyectos {
+	display : flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+  	flex-wrap: wrap;
+	margin: 3em 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+	.proyectos li {
+		margin: 0.2em;
+		flex-grow: 1;
+		background-color:  #EDF2F6;
+		width: 20%;
+		position: relative;
+		min-width: 256px;
+		min-height: 256px;
+	}
+	.proyectos li.light {
+		color: #BBC4D3;	
+	}
+	.proyectos li.dark {
+		
+		color: #FFF;
+	}
+	.proyectos li  h2 {
+		position: absolute;
+		margin: 2em;
+		
+		text-transform: none;
+		font-weight: normal;
+		font-size: 1.2em;
+	}
+	.proyectos li  img {
+		display: block;
+	}
+	.proyectos li:hover  h2{
+		color: #000;
+	}
+	.proyectos li:hover  img{
+		opacity: 0.7;
+	}
